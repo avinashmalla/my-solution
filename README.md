@@ -4,14 +4,14 @@ The output is the tree structure of links and sublinks.
 
 **Installation**
 <pre>
-git clone https://github.com/avinashmalla/viomba.git
-cd viomba
+git clone https://github.com/avinashmalla/my-solution.git
+cd my-solution
 </pre>
 
 
 **Usage**
 - Input: 
-    <pre> python3 viomba.py Physics 2 3 </pre>
+    <pre> python3 solution.py Physics 2 3 </pre>
 - Output:
 <pre>
 Physics 
