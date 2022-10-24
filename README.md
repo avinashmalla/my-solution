@@ -2,6 +2,14 @@ I have solved the problem using recursive method. The user inputs the *main arti
 
 The output is the tree structure of links and sublinks.
 
+**Installation**
+<pre>
+git clone https://github.com/avinashmalla/viomba.git
+cd viomba
+</pre>
+
+
+**Usage**
 - Input: 
     <pre> python3 viomba.py Physics 2 3 </pre>
 - Output:
@@ -20,3 +28,4 @@ Physics
      Subatomic particle
      Electron
 </pre>
+
