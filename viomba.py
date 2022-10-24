@@ -3,7 +3,7 @@ import requests
 import re
 from bs4 import BeautifulSoup
 
-def get_page(startLink, depth, numLinks, tabs):
+def get_links(startLink, depth, numLinks, tabs):
     URL = "https://en.wikipedia.org/"
     page = requests.get(URL + startLink)
     page.raise_for_status()
@@ -23,7 +23,7 @@ def get_page(startLink, depth, numLinks, tabs):
             print("  " * tabs, link['title'])
     else:
         for link in links:
-            get_page(link['href'], depth, numLinks, tabs)    
+            get_links(link['href'], depth, numLinks, tabs)    
 
 
 def main(argv):
@@ -32,7 +32,7 @@ def main(argv):
     depth = int(sys.argv[2])
     numLinks = int(sys.argv[3])
     tabs = 0
-    get_page(inputLink, depth, numLinks, tabs)
+    get_links(inputLink, depth, numLinks, tabs)
 
 if __name__ == "__main__":
     main(sys.argv)
